@@ -1,0 +1,100 @@
+:root {
+    --nord-dark0:           #2e3440;
+    --nord-dark1:           #3b4252;
+    --nord-dark2:           #434c5e;
+    --nord-dark3:           #4c566a;
+    
+    --nord-white0:          #d8dee9;
+    --nord-white1:          #e5e9f0;
+    --nord-white2:          #eceff4;
+    
+    --nord-dim0:            #8fbcbb;
+    --nord-dim1:            #88c0d0;
+    --nord-dim2:            #81a1c1;
+    --nord-dim3:            #5e81ac;
+    
+    --nord-colors-red:      #bf616a;
+    --nord-colors-orange:   #d08770;
+    --nord-colors-yellow:   #ebcb8b;
+    --nord-colors-green:    #a3be8c;
+    --nord-colors-magenta:  #b48ead;
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        padding:            0 !important;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .container {
+        display:            grid;
+    }
+    
+    .row-1 {
+        grid-column:        1;
+        grid-row:           1;
+    }
+
+    .row-2 {
+        grid-column:        1;
+        grid-row:           2;
+    }
+
+    input {
+        margin-left:        0 !important;
+    }
+ }
+
+body {
+    font-family:            JetBrains Mono;
+    font-size:              200%;
+    padding:                15% 25% 15% 25%;
+    background-color:       var(--nord-dark0);
+}
+
+input {
+    color:                  var(--nord-white0);
+    background-color:       var(--nord-dim3);
+    border-color:           var(--nord-dim3);
+    border-radius:          10px;
+    font-family:            JetBrains Mono;
+    font-size:              80%;
+    margin-left:            15px;
+    padding:                5px 10px 5px 10px;
+    float:                  right;
+    border:                 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance:     none;
+    margin:                 0;
+}
+
+input[type=number] {
+    -moz-appearance:        textfield;
+}
+
+input:focus {
+    border:                 0;
+    outline:                none;
+}
+
+select {
+    font-family:            JetBrains Mono, monospace;
+    font-size:              100%;
+    background-color:       var(--nord-dark0);
+    color:                  var(--nord-white0);
+    border:                 0;
+    padding:                0;
+}
+
+span.right {
+    float:                  right;
+    text-align:             right;
+}
+
+span.red {
+    color:                  var(--nord-colors-orange);
+}

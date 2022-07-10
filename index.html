@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="src/converter.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JetBrains+Mono:300"/>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="icon" type="image/x-icon" href="src/favicon.ico">
+    <title>Temperature converter</title>
+</head>
+<body>
+    <p class="container">
+        <select id="from" class="row-1" onchange="updateSelectorValues(); displayResult(input.value)">
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="celsius">Celsius</option>
+            <option value="kelvin">Kelvin</option>
+        </select>
+        <input id="input" class="row-2" type="number" placeholder="..."
+        oninput="displayResult(this.value)"
+        onchange="displayResult(this.value)">
+    </p>
+    <p class="container">
+        <select id="to" class="row-1" onchange="updateSelectorValues(); displayResult(input.value)">
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="celsius">Celsius</option>
+            <option value="kelvin">Kelvin</option>
+        </select>
+        <span id="output" class="right red row-2"></span>
+    </p>
+</body>
+</html>
